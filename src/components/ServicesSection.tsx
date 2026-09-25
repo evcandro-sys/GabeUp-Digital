@@ -16,11 +16,11 @@ import {
 import { WHATSAPP_LINK } from './Navbar';
 
 // Direct ES imports for bundled asset hashing in production and preview
-import biositeMockupImg from '../assets/images/biosite_smartphone_mockup_1790314074873.jpg';
-import googleBusinessMockupImg from '../assets/images/google_business_mockup_1790314064170.jpg';
-import nfcPlacaMockupImg from '../assets/images/nfc_placa_mockup_1790314052823.jpg';
-import marketingDashboardImg from '../assets/images/marketing_growth_dashboard_1790314093352.jpg';
-import virtualTour360Img from '../assets/images/virtual_tour_360_mockup_1790314084027.jpg';
+import biositeMockupImg from '../assets/images/biosite_smartphone_mockup.webp';
+import googleBusinessMockupImg from '../assets/images/google_business_mockup.webp';
+import nfcPlacaMockupImg from '../assets/images/nfc_placa_mockup.webp';
+import marketingDashboardImg from '../assets/images/marketing_growth_dashboard.webp';
+import virtualTour360Img from '../assets/images/virtual_tour_360_mockup.webp';
 
 export const ServicesSection: React.FC = () => {
   // Interactive NFC Simulation State
@@ -110,6 +110,9 @@ export const ServicesSection: React.FC = () => {
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
@@ -134,6 +137,9 @@ export const ServicesSection: React.FC = () => {
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
@@ -289,6 +295,9 @@ export const ServicesSection: React.FC = () => {
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 text-xs text-slate-200 bg-slate-900/90 p-3 rounded-xl border border-slate-700/80 backdrop-blur-md">
@@ -433,6 +442,9 @@ export const ServicesSection: React.FC = () => {
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
@@ -457,6 +469,9 @@ export const ServicesSection: React.FC = () => {
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
