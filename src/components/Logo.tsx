@@ -121,12 +121,12 @@ export const GabeUpLogo: React.FC<LogoProps> = ({
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#16A34A] via-[#22C55E] to-[#84CC16] drop-shadow-[0_2px_12px_rgba(22,163,74,0.4)]">
             Up
           </span>
-          <span className="text-xs uppercase tracking-[0.22em] text-[#0EA58F] font-semibold ml-0.5">
+          <span className="text-xs uppercase tracking-[0.22em] text-[#14B8A6] font-bold ml-0.5">
             Digital
           </span>
         </div>
         {showSlogan && (
-          <span className={`text-slate-400 font-medium tracking-wide ${current.slogan}`}>
+          <span className={`text-slate-300 font-medium tracking-wide ${current.slogan}`}>
             Elevando negócios no digital.
           </span>
         )}

@@ -31,15 +31,15 @@ export const Hero: React.FC = () => {
         {/* Subtle Kicker / Brand Statement */}
         <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/60 shadow-inner mb-8 backdrop-blur-md">
           <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#16A34A] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#16A34A]"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#22C55E] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#22C55E]"></span>
           </span>
-          <span className="text-xs font-medium text-slate-300 tracking-wide">
+          <span className="text-xs font-medium text-slate-200 tracking-wide">
             Soluções Digitais para Negócios Locais
           </span>
-          <span className="text-slate-600 text-xs">|</span>
-          <span className="text-xs font-medium text-[#16A34A] flex items-center gap-1">
-            <TrendingUp className="w-3.5 h-3.5" />
+          <span className="text-slate-400 text-xs" aria-hidden="true">|</span>
+          <span className="text-xs font-medium text-[#4ADE80] flex items-center gap-1">
+            <TrendingUp className="w-3.5 h-3.5 text-[#22C55E]" />
             Crescimento Real
           </span>
         </div>
@@ -91,19 +91,19 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Segment pill-free trust indicators for Brazilian Local Markets */}
-        <div className="pt-6 border-t border-slate-800/60 max-w-3xl w-full flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs md:text-sm text-slate-400">
-          <span className="flex items-center gap-1.5 text-slate-300">
-            <ShieldCheck className="w-4 h-4 text-[#16A34A]" />
+        <div className="pt-6 border-t border-slate-800/60 max-w-3xl w-full flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs md:text-sm text-slate-300">
+          <span className="flex items-center gap-1.5 text-slate-200 font-medium">
+            <ShieldCheck className="w-4 h-4 text-[#22C55E]" />
             Soluções Sob Medida Para:
           </span>
           <span>Restaurantes & Bares</span>
-          <span className="text-slate-600">·</span>
+          <span className="text-slate-400" aria-hidden="true">·</span>
           <span>Clínicas & Consultórios</span>
-          <span className="text-slate-600">·</span>
+          <span className="text-slate-400" aria-hidden="true">·</span>
           <span>Salões & Barbearias</span>
-          <span className="text-slate-600">·</span>
+          <span className="text-slate-400" aria-hidden="true">·</span>
           <span>Lojas & Varejo</span>
-          <span className="text-slate-600">·</span>
+          <span className="text-slate-400" aria-hidden="true">·</span>
           <span>Profissionais Autônomos</span>
         </div>
       </div>

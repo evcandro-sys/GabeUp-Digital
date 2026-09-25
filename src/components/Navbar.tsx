@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
               href={INSTAGRAM_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 text-slate-400 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors"
+              className="p-2 text-slate-300 hover:text-white hover:bg-slate-800/60 rounded-lg transition-colors"
               aria-label="Instagram da GabeUp Digital"
               title="Instagram @gabeupdigital"
             >
@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-medium text-white bg-gradient-to-r from-[#16A34A] to-[#0EA58F] hover:from-[#15803d] hover:to-[#0f766e] rounded-xl shadow-md shadow-[#16A34A]/25 transition-all duration-200 active:scale-[0.98] whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-semibold text-white bg-gradient-to-r from-[#16A34A] to-[#0EA58F] hover:from-[#15803d] hover:to-[#0f766e] rounded-xl shadow-md shadow-[#16A34A]/25 transition-all duration-200 active:scale-[0.98] whitespace-nowrap"
             >
               <span>Falar no WhatsApp</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -92,14 +92,14 @@ export const Navbar: React.FC = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-1.5 text-xs font-medium text-white bg-[#16A34A] rounded-lg shadow-sm whitespace-nowrap"
+              className="px-3 py-1.5 text-xs font-semibold text-white bg-[#15803d] hover:bg-[#16A34A] rounded-lg shadow-sm whitespace-nowrap"
             >
               WhatsApp
             </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#16A34A]"
+              className="p-2 rounded-lg text-slate-200 hover:text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#22C55E]"
               aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -117,7 +117,7 @@ export const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-slate-300 hover:text-white hover:bg-slate-800/50 px-3 py-2 rounded-lg text-sm font-medium transition-colors"
+                  className="text-slate-200 hover:text-white hover:bg-slate-800/50 px-3 py-2 rounded-lg text-sm font-medium transition-colors"
                 >
                   {link.label}
                 </a>
@@ -127,7 +127,7 @@ export const Navbar: React.FC = () => {
                   href={INSTAGRAM_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1.5 px-3 py-2"
+                  className="text-xs text-slate-300 hover:text-white flex items-center gap-1.5 px-3 py-2"
                 >
                   <span>@gabeupdigital</span>
                 </a>

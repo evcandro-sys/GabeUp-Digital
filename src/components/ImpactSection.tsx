@@ -11,7 +11,7 @@ export const ImpactSection: React.FC = () => {
       desc: 'Sua empresa no topo do Google Maps, pesquisas locais e canais diretos.',
       icon: Eye,
       accent: 'from-[#16A34A]/20 to-emerald-950/40',
-      badgeColor: 'text-[#16A34A]',
+      badgeColor: 'text-[#22C55E]',
       heightLevel: 'h-[160px] sm:h-[180px]',
     },
     {
@@ -21,7 +21,7 @@ export const ImpactSection: React.FC = () => {
       desc: 'Biosite com acabamento profissional, fotos em alta resolução e avaliações 5 estrelas.',
       icon: Award,
       accent: 'from-[#0EA58F]/20 to-teal-950/40',
-      badgeColor: 'text-[#0EA58F]',
+      badgeColor: 'text-[#14B8A6]',
       heightLevel: 'h-[180px] sm:h-[210px]',
     },
     {
@@ -57,7 +57,7 @@ export const ImpactSection: React.FC = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Block */}
         <div className="max-w-3xl mx-auto text-center mb-16 sm:mb-20">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#16A34A] mb-3">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#22C55E] mb-3">
             O que a GabeUp faz
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white tracking-tight mb-6">
@@ -66,7 +66,7 @@ export const ImpactSection: React.FC = () => {
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-4">
             Estar no digital não é apenas ter uma rede social. É estar presente no momento em que o cliente procura, compara, avalia e decide comprar.
           </p>
-          <p className="text-sm sm:text-base font-medium text-[#0EA58F]">
+          <p className="text-sm sm:text-base font-semibold text-[#14B8A6]">
             A GabeUp Digital cria soluções que conectam negócios locais a novos clientes.
           </p>
         </div>
@@ -76,14 +76,14 @@ export const ImpactSection: React.FC = () => {
           {/* Ascending Trend Line Header */}
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-800/80">
             <div className="flex items-center gap-3">
-              <span className="p-2 rounded-xl bg-[#16A34A]/15 text-[#16A34A] border border-[#16A34A]/30">
+              <span className="p-2 rounded-xl bg-[#16A34A]/15 text-[#22C55E] border border-[#16A34A]/30">
                 <TrendingUp className="w-5 h-5" />
               </span>
               <div>
                 <h3 className="text-base font-semibold text-white font-display">
                   Evolução Digital do Seu Negócio
                 </h3>
-                <p className="text-xs text-slate-400">
+                <p className="text-xs text-slate-300">
                   Cada etapa potencializa a próxima em movimento ascendente contínuo
                 </p>
               </div>
