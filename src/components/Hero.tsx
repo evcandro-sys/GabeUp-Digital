@@ -8,10 +8,10 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Background Decorative Tech Elements & Ambient Lighting */}
       <div className="absolute inset-0 pointer-events-none select-none">
-        {/* Soft Radial Emerald & Teal Glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-to-tr from-[#0B3D2E]/50 via-[#16A34A]/20 to-transparent rounded-full blur-[140px]" />
-        <div className="absolute bottom-10 right-10 w-[420px] h-[420px] bg-[#0EA58F]/15 rounded-full blur-[120px]" />
-        <div className="absolute top-20 left-10 w-[380px] h-[380px] bg-[#16A34A]/10 rounded-full blur-[100px]" />
+        {/* Soft Radial Emerald & Teal Glows (Hardware Accelerated & Mobile Optimized) */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[650px] h-[320px] md:h-[650px] bg-gradient-to-tr from-[#0B3D2E]/50 via-[#16A34A]/20 to-transparent rounded-full blur-[60px] md:blur-[140px] transform-gpu pointer-events-none" />
+        <div className="absolute bottom-10 right-10 w-[220px] md:w-[420px] h-[220px] md:h-[420px] bg-[#0EA58F]/15 rounded-full blur-[50px] md:blur-[120px] transform-gpu pointer-events-none" />
+        <div className="absolute top-20 left-10 w-[200px] md:w-[380px] h-[200px] md:h-[380px] bg-[#16A34A]/10 rounded-full blur-[40px] md:blur-[100px] transform-gpu pointer-events-none" />
 
         {/* Subtle geometric perspective grid & digital connection lines */}
         <div 

@@ -15,12 +15,17 @@ import {
 } from 'lucide-react';
 import { WHATSAPP_LINK } from './Navbar';
 
-// Direct ES imports for bundled asset hashing in production and preview
-import biositeMockupImg from '../assets/images/biosite_smartphone_mockup.webp';
-import googleBusinessMockupImg from '../assets/images/google_business_mockup.webp';
-import nfcPlacaMockupImg from '../assets/images/nfc_placa_mockup.webp';
-import marketingDashboardImg from '../assets/images/marketing_growth_dashboard.webp';
-import virtualTour360Img from '../assets/images/virtual_tour_360_mockup.webp';
+// Direct ES imports for bundled asset hashing in production and preview (AVIF + WebP fallback)
+import biositeMockupAvif from '../assets/images/biosite_smartphone_mockup.avif';
+import biositeMockupWebp from '../assets/images/biosite_smartphone_mockup.webp';
+import googleBusinessMockupAvif from '../assets/images/google_business_mockup.avif';
+import googleBusinessMockupWebp from '../assets/images/google_business_mockup.webp';
+import nfcPlacaMockupAvif from '../assets/images/nfc_placa_mockup.avif';
+import nfcPlacaMockupWebp from '../assets/images/nfc_placa_mockup.webp';
+import marketingDashboardAvif from '../assets/images/marketing_growth_dashboard.avif';
+import marketingDashboardWebp from '../assets/images/marketing_growth_dashboard.webp';
+import virtualTour360Avif from '../assets/images/virtual_tour_360_mockup.avif';
+import virtualTour360Webp from '../assets/images/virtual_tour_360_mockup.webp';
 
 export const ServicesSection: React.FC = () => {
   // Interactive NFC Simulation State
@@ -104,16 +109,20 @@ export const ServicesSection: React.FC = () => {
 
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
-                <img
-                  src={biositeMockupImg}
-                  alt="Mockup de Smartphone com Biosite Profissional da GabeUp Digital"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="600"
-                />
+                <picture>
+                  <source srcSet={biositeMockupAvif} type="image/avif" />
+                  <source srcSet={biositeMockupWebp} type="image/webp" />
+                  <img
+                    src={biositeMockupWebp}
+                    alt="Mockup de Smartphone com Biosite Profissional da GabeUp Digital"
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="600"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
                   <span className="font-medium bg-slate-900/80 px-2.5 py-1 rounded-md backdrop-blur-sm border border-slate-700/60">
@@ -131,16 +140,20 @@ export const ServicesSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-5 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
-                <img
-                  src={googleBusinessMockupImg}
-                  alt="Perfil da Empresa no Google Maps com avaliações 5 estrelas"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="600"
-                />
+                <picture>
+                  <source srcSet={googleBusinessMockupAvif} type="image/avif" />
+                  <source srcSet={googleBusinessMockupWebp} type="image/webp" />
+                  <img
+                    src={googleBusinessMockupWebp}
+                    alt="Perfil da Empresa no Google Maps com avaliações 5 estrelas"
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="600"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
                   <span className="font-medium bg-slate-900/80 px-2.5 py-1 rounded-md backdrop-blur-sm border border-slate-700/60">
@@ -289,16 +302,20 @@ export const ServicesSection: React.FC = () => {
 
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl group">
-                <img
-                  src={nfcPlacaMockupImg}
-                  alt="Placa NFC e QR Code GabeUp Digital instalada no balcão"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="600"
-                />
+                <picture>
+                  <source srcSet={nfcPlacaMockupAvif} type="image/avif" />
+                  <source srcSet={nfcPlacaMockupWebp} type="image/webp" />
+                  <img
+                    src={nfcPlacaMockupWebp}
+                    alt="Placa NFC e QR Code GabeUp Digital instalada no balcão"
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="600"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 text-xs text-slate-200 bg-slate-900/90 p-3 rounded-xl border border-slate-700/80 backdrop-blur-md">
                   <div className="font-semibold text-white flex items-center gap-1.5 mb-1">
@@ -436,16 +453,20 @@ export const ServicesSection: React.FC = () => {
 
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
-                <img
-                  src={marketingDashboardImg}
-                  alt="Dashboard profissional de métricas e anúncios de tráfego pago"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="600"
-                />
+                <picture>
+                  <source srcSet={marketingDashboardAvif} type="image/avif" />
+                  <source srcSet={marketingDashboardWebp} type="image/webp" />
+                  <img
+                    src={marketingDashboardWebp}
+                    alt="Dashboard profissional de métricas e anúncios de tráfego pago"
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="600"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
                   <span className="font-medium bg-slate-900/80 px-2.5 py-1 rounded-md backdrop-blur-sm border border-slate-700/60">
@@ -463,16 +484,20 @@ export const ServicesSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-5 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
-                <img
-                  src={virtualTour360Img}
-                  alt="Tour virtual e experiência imersiva 360 graus para espaço comercial"
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  decoding="async"
-                  width="800"
-                  height="600"
-                />
+                <picture>
+                  <source srcSet={virtualTour360Avif} type="image/avif" />
+                  <source srcSet={virtualTour360Webp} type="image/webp" />
+                  <img
+                    src={virtualTour360Webp}
+                    alt="Tour virtual e experiência imersiva 360 graus para espaço comercial"
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="600"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-slate-300">
                   <span className="font-medium bg-slate-900/80 px-2.5 py-1 rounded-md backdrop-blur-sm border border-slate-700/60">

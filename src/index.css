@@ -52,6 +52,19 @@ h1, h2, h3, h4, h5, h6, .font-display {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* Modern mobile rendering & offscreen layout optimization */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+@media (max-width: 768px) {
+  .glass-card {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
+
 .glass-card-hover {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
