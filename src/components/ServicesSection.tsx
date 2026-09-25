@@ -15,6 +15,13 @@ import {
 } from 'lucide-react';
 import { WHATSAPP_LINK } from './Navbar';
 
+// Direct ES imports for bundled asset hashing in production and preview
+import biositeMockupImg from '../assets/images/biosite_smartphone_mockup_1790314074873.jpg';
+import googleBusinessMockupImg from '../assets/images/google_business_mockup_1790314064170.jpg';
+import nfcPlacaMockupImg from '../assets/images/nfc_placa_mockup_1790314052823.jpg';
+import marketingDashboardImg from '../assets/images/marketing_growth_dashboard_1790314093352.jpg';
+import virtualTour360Img from '../assets/images/virtual_tour_360_mockup_1790314084027.jpg';
+
 export const ServicesSection: React.FC = () => {
   // Interactive NFC Simulation State
   const [nfcTapped, setNfcTapped] = useState(false);
@@ -98,7 +105,7 @@ export const ServicesSection: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
                 <img
-                  src="/src/assets/images/biosite_smartphone_mockup_1790314074873.jpg"
+                  src={biositeMockupImg}
                   alt="Mockup de Smartphone com Biosite Profissional da GabeUp Digital"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -122,7 +129,7 @@ export const ServicesSection: React.FC = () => {
             <div className="lg:col-span-5 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
                 <img
-                  src="/src/assets/images/google_business_mockup_1790314064170.jpg"
+                  src={googleBusinessMockupImg}
                   alt="Perfil da Empresa no Google Maps com avaliações 5 estrelas"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -277,7 +284,7 @@ export const ServicesSection: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-emerald-500/30 shadow-2xl group">
                 <img
-                  src="/src/assets/images/nfc_placa_mockup_1790314052823.jpg"
+                  src={nfcPlacaMockupImg}
                   alt="Placa NFC e QR Code GabeUp Digital instalada no balcão"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -421,7 +428,7 @@ export const ServicesSection: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
                 <img
-                  src="/src/assets/images/marketing_growth_dashboard_1790314093352.jpg"
+                  src={marketingDashboardImg}
                   alt="Dashboard profissional de métricas e anúncios de tráfego pago"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -445,7 +452,7 @@ export const ServicesSection: React.FC = () => {
             <div className="lg:col-span-5 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
                 <img
-                  src="/src/assets/images/virtual_tour_360_mockup_1790314084027.jpg"
+                  src={virtualTour360Img}
                   alt="Tour virtual e experiência imersiva 360 graus para espaço comercial"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
