@@ -4,11 +4,16 @@ Biosite premium, responsivo e de alta performance desenvolvido para a **GabeUp D
 
 ---
 
-## 🚀 Como subir para o GitHub
+## 🚀 Como subir para o GitHub e Atualizar na Vercel
 
-O repositório local Git já foi inicializado e o primeiro commit já está preparado na branch `main`.
+Se você já vinculou o repositório ao seu GitHub anteriormente, basta rodar:
 
-Basta criar um repositório no seu GitHub (ex: `gabeup-digital`) e executar no terminal:
+```bash
+# Enviar as correções para o GitHub (a Vercel atualizará o deploy automaticamente!)
+git push origin main
+```
+
+Se for a primeira vez:
 
 ```bash
 # 1. Vincule ao seu repositório no GitHub (substitua pelo link do seu repositório)
