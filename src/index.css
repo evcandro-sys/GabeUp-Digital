@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --color-brand-deep: #0B3D2E;
+  --color-brand-vibrant: #16A34A;
+  --color-brand-teal: #0EA58F;
+  --color-brand-lime: #84CC16;
+  --color-brand-graphite: #0F172A;
+  --color-brand-canvas: #090E1A;
+  --color-brand-ice: #F8FAFC;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #090E1A;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom glow and backdrop effects */
+.glow-green {
+  box-shadow: 0 0 35px -5px rgba(22, 163, 74, 0.25);
+}
+
+.glow-teal {
+  box-shadow: 0 0 35px -5px rgba(14, 165, 143, 0.25);
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #F8FAFC 0%, #A7F3D0 40%, #16A34A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, #5EEAD4 0%, #0EA58F 60%, #0B3D2E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(22, 163, 74, 0.35);
+  box-shadow: 0 20px 40px -15px rgba(11, 61, 46, 0.4);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090E1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #16A34A;
+}

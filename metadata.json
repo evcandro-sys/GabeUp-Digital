@@ -1,0 +1,6 @@
+{
+  "name": "GabeUp Digital",
+  "description": "Biosites, presença no Google, placas NFC, QR Code, tráfego pago e soluções digitais para fortalecer negócios locais. Conheça a GabeUp Digital.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
